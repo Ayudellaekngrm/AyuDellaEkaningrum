@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class selection {
+
+        public static void main(String[] args) {
+
+            Scanner input = new Scanner(System.in);
+            System.out.print("Masukkan angka antara 1-100 : ");
+            int angka = input.nextInt();
+            if (angka >= 1 && angka <=100){
+                System.out.println("GUNAKAN BILANGAN BULAT 1-100");
+                if (angka % 2 == 0){
+                    if (angka >= 6 && angka <= 20){
+                        System.out.println("ajaib");
+                    }else{
+                        System.out.println("tidak ajaib");
+                    }
+                }else{
+                    System.out.println("Ajaib");
+                }
+            }else {
+                System.out.println("SALAH!!!!!!!!!!");
+            }
+        }
+    }
